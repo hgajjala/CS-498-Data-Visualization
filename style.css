@@ -1,0 +1,166 @@
+
+
+text {
+	font-family: verdana;
+	font-weight:lighter;
+    font-size:12px;
+    
+}
+.navbar {
+    background-color:#525252
+    ;
+ 
+}
+
+ .navbar-nav li {
+    color:rgba(19, 3, 3,0);
+    font-weight: bold;
+}
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 38%;
+    transform: translatex(-50%);
+}
+.container {
+  float: left;
+  border: 5px solid red;
+  width:100%;
+  height:50%;
+  display:block;
+  overflow:hidden;
+}
+.container2 {
+    float: right;
+}
+
+/*for line chart*/
+.axis path, .axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges; /*The shape-rendering property is an SVG attribute, used here to make sure our axis and its tick mark lines are pixel-perfect. */
+}
+
+.line {
+  fill: none;
+  /*stroke: steelblue;*/
+  stroke-width: 3px;
+}
+
+.dot {
+  /*fill: white;*/
+  /*stroke: steelblue;*/
+  stroke-width: 1.5px;
+  }
+				
+
+.axis text {
+    font-family: Verdana;
+    font-size: 11px;
+}
+
+.title {
+	 font-family: Verdana;
+    font-size: 15px;	
+		
+}
+
+.xAxis {
+    font-family: verdana;
+    font-size: 11px;
+    fill: black;
+}  
+
+.yAxis {
+    font-family: verdana;
+    font-size: 11px;
+    fill: black;
+}
+
+  
+table {
+	/* border-collapse:collapse; */
+	/* border: 0px;	 */
+	font-family: Verdana;	
+	/* color: #5C5558; */
+	font-size: 12px;
+    text-align: left;	
+    
+   
+}
+
+td {
+    padding-left: 15px;	
+    vertical-align: top;;	
+    padding-top: 10px;
+    
+}
+img {
+    padding-bottom: 10px;
+    padding-left: 100px;
+    width:80%;
+    float:left;
+    align-self: left;
+}
+div.tooltip {	
+    position: absolute;			
+    text-align: justify;			
+    width: 150px;					
+    height: 50px;					
+    padding: 2px;				
+    font: 12px verdana;		
+    background: black;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;
+    color:white;			
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.axis text{
+    font: Times;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  /* color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+body {
+    font-size: 16px;
+    color: rgb(10, 9, 9);
+    /* background-color: #DCDCDC; */
+    font-family: 'Oxygen', sans-serif;
+   
+  }
+.bullelements{
+    font-size:2rem;
+    color:yellow;
+  }
+
+  
+
+  

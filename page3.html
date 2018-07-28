@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data Visualization</title>
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+<body>
+        <h1 style="text-align:center;color:red;font-family:verdana;font-size: 30px">WATCH OUT <span style="color:black;
+            font-family: verdana;font-size: 20px">for these states </span></h1>
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+             <!-- <ul class="nav navbar-nav navbar-left">
+                <li><a href="#">Left</a></li>
+            </ul> -->
+            <ul class="nav navbar-nav navbar-center">
+                <li><a href="index.html">ABOUT THE VISUALIZATION</a></li>
+                <li><a href="page1.html">1.OVERVIEW</a></li>
+                <li><a href="page2.html">2.FATALITIES</a></li>
+                <li><a href="page3.html">3.PREVALENCE</a></li>
+                <li><a href="page4.html">4.DETAILS</a></li>
+                <li><a href="page5.html">AUTHOR's SECTION</a></li>
+            </ul>
+            <!-- <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Right</a></li>
+            </ul> -->
+        </div>
+    </nav>
+  <!-- <br><br> <br><br> -->
+  <div class="container">
+      <div align="left" style="color: #040000;">
+
+          <table>
+            <tbody>
+              <tr>
+                <td width="500" style="float: left">
+                    <h6 style="text-align:center;color:red;font-family:verdana;font-size: 15px"><b>Total Prevalence:</b> <span style="color: black;
+                            font-family: verdana;font-size: 15px">1.9%</span></h6>
+                    <div id="details"></div>
+                </td>
+                
+                <td width="500">
+                        <h6 style="text-align:center;color:red;font-family:verdana;font-size: 15px"><b>Top 10 states <span style ="color:black">to watch out for drunk drivers</span> 
+                        </b></h6>
+                    <div style="float:right" id="chart">
+                  </td>
+              </tr>
+              <tr>
+                <td width=1000>
+                        <p style="text-align:auto;font-family:verdana;font-size: 12px">
+                                <span style ="text-align:auto;color:red;font-family:verdana;font-size:12px"><b>Let's go down further and find out which states highest prevalence and why?</b></span></b><br> 
+                                Prevalence is the number of people reported driving after too much drinking. In the chart it is represented as % for each state. Northern states like Mountana, Nebraska, North Dakota and Iowa reported highest prevalence along with other regions. It is believed that, to keep themselves warm from cold weather, people drink alochol which in some cases exceeds the normal allowed .<br><br>
+                                <span style ="text-align:auto;color:red;font-family:verdana;font-size:12px"><b>What are the user interactions available?</b></span></b><br>
+                                Tooltip can be used to know the fatalities and prevalence by each state. Can navigate to next screen using the buttons on the navigation bar.<br>
+                                <p style="text-align:auto;font-family:verdana;font-size: 12px">
+                                 <span style ="text-align:auto;color:red;font-family:verdana;font-size:12px"><b>What does the story tell ?</b></span></b><br>
+                                <b>Watch out, if you live in one of these states, especially during winter alochol combined with sleet and snow can be extremely dangerous!!!</b>
+                                </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      
+  </div>
+
+</body>
+<script src="d3.v4.min.js"></script>
+<script src="page3.js"></script>
+</html>

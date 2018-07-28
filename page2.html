@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data Visualization</title>
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+<body>
+        <h1 style="text-align:center;color:black;font-family:verdana;font-size: 20px">Most <span style="color:red;
+            font-family: verdana;font-size: 30px">DANGEROUS </span>states</h1>
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+             <!-- <ul class="nav navbar-nav navbar-left">
+                <li><a href="#">Left</a></li>
+            </ul> -->
+            <ul class="nav navbar-nav navbar-center">
+                <li><a href="index.html">ABOUT THE VISUALIZATION</a></li>
+                <li><a href="page1.html">1.OVERVIEW</a></li>
+                <li><a href="page2.html">2.FATALITIES</a></li>
+                <li><a href="page3.html">3.PREVALENCE</a></li>
+                <li><a href="page4.html">4.DETAILS</a></li>
+                <li><a href="page5.html">AUTHOR's SECTION</a></li>
+                <!-- <li><a href="page5.html">Scene 5</a></li> -->
+            </ul>
+            <!-- <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Right</a></li>
+            </ul> -->
+        </div>
+    </nav>
+  <!-- <br><br> <br><br> -->
+  <div class="container">
+      <div align="left" style="color: #040000;">
+
+          <table>
+            <tbody>
+              <tr>
+                <td style="width:60%; float:left">
+                    <h6 style="text-align:center;color:red;font-family:verdana;font-size: 15px"><b>Total Fatalities:</b> <span style="color: black;
+                            font-family: verdana;font-size: 15px">119,200</span></h6>
+                    <div style="float: left" id="details"></div>
+                </td>
+                
+                <td style="width:40%; float:rightleft">
+                        <h6 style="text-align:center;color:black;font-family:verdana;font-size: 15px"><b><span style="color:red">Top 10 states</span> that reported most fatalities</b></h6>
+                    <div style="float:right" id="chart">
+                  </td>
+              </tr>
+              <tr>
+                  <td width=1000>
+                        <p style="text-align:auto;font-family:verdana;font-size: 12px">
+                                <span style ="text-align:auto;color:red;font-family:verdana;font-size:12px"><b>As a next step, let's explore which states reported most fatalities and why?</b></span></b><br> 
+                                Total fatalities include people who are involved in the crash i.e people who were driving under influence during the crash and also the victims hit by drunk drivers.Texas, California and Florida reported highest fatalities followed by  most eastern states. All these states have one thing in common, they are most popuplated states in US.<br><br>
+                                <span style ="text-align:auto;color:red;font-family:verdana;font-size:12px"><b>What are the user interactions available?</b></span></b><br>
+                                Tooltip can be used to know the fatalities and prevalence by each state. Can navigate to next screen using the buttons on the navigation bar.<br>
+                                <p style="text-align:auto;font-family:verdana;font-size: 12px">
+                                 <span style ="text-align:auto;color:red;font-family:verdana;font-size:12px"><b>What does the story tell ?</b></span></b><br>
+                                <b>Please be on your gaurd, if you live in one of these red states!!</b>
+                                </p>
+                  </td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+
+    <!-- <section style="float:left" id="map">
+            <span>
+            
+                </div>
+          </span>
+          </section>
+          <!-- <section style="float: left">
+              <br><br><br><br><br><br>
+              <div id="legend"></div>
+            </section>         
+          <section style="float:right" id="chart-section" >
+           
+          </section>
+       -->
+      
+  </div>
+
+</body>
+<script src="d3.v4.min.js"></script>
+<script src="page2.js"></script>
+</html>

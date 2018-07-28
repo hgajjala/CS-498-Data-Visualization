@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data Visualization</title>
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+<body>
+        <h1 style="text-align:center;color:black;font-family:verdana;font-size: 20px">Now it is your <span style="color:red;
+            font-family: verdana;font-size: 30px">RESPONSIBILITY </span>my friend!!</h1>
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                 <!-- <ul class="nav navbar-nav navbar-left">
+                <li><a href="#">Left</a></li>
+            </ul> -->
+            <ul class="nav navbar-nav navbar-center">
+                    <li><a href="index.html">ABOUT THE VISUALIZATION</a></li>
+                    <li><a href="page1.html">1.OVERVIEW</a></li>
+                    <li><a href="page2.html">2.FATALITIES</a></li>
+                    <li><a href="page3.html">3.PREVALENCE</a></li>
+                    <li><a href="page4.html">4.DETAILS</a></li>
+                    <li><a href="page5.html">AUTHOR's SECTION</a></li>
+                </ul>
+                <!-- <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Right</a></li>
+                </ul> -->
+            </div>
+        </nav>
+  <!-- <br><br> <br><br> -->
+  <div class="container">
+      <table>
+          <tbody>
+            <tr>
+                <td style="width: 40%" style="float:left">
+                    <h6 style="text-align:center;color:black;font-family:verdana;font-size: 15px"><b>Click on YOUR sate for</b> <span style="color: black;
+                            font-family: verdana;color:red;font-size: 15px">FURTHER DETAILS</span></h6>
+                  <div id="details" style="float:left"></div>
+                  
+                  <!-- <div id="legend" style="width: 50%; float:right"></div> -->
+                </td>
+                <td style="width: 60%;">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td style="float: left">
+                                    <h4 style="text-align: center"> <span style=color:GREEN><b>YOUNG ADULTS</b></span> watch out</h4>
+                                    <div style="float:left" id="youth"></div>
+                                </td>
+                            
+                                <td style="float: left" >
+                                        <h4 style="text-align: center"><span style=color:BLUE><b>MEN</b></span> be AWARE</h4>
+                                    <div style="float:left" id="gender">
+                                </td>
+                                <td style="float: left" >
+                                        <h4 style="text-align: center"> Prevalence(%)</h4>
+                                    <div style="float:right" id="chart">
+                                </td>
+                                <td style="float: left" >
+                                        <h4 style="text-align: center"> Total Fatalities</h4>
+                                        <div style="float:right" id="fatalities">
+                                    </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td width="1000" valign="top">
+                    <div style="float:right" id="writeup4">
+                            <p style="text-align:auto;font-family:verdana;font-size: 12px">
+                                    <span style ="text-align:auto;color:red;font-family:verdana;font-size:12px"><b>Let's deep dive and exlplore what happened to the victims of 2012 by gender,age, prevalence and fatalities by every state?</b></span></b><br> 
+                                     The total falaties for the entire country amounted to 119,100 in 2012 alone. Also,it is obvious from the chart that young adults betweem ages 20-35 especially males are prone to be victims of both alcohol, crashes and fatalities. Prevalence seem to be high as well.<br>
+                                     The measure for Age and Gender are rates per 100,000 population where as 'Prevalence' is percentage. Click on each State to know the details by each state.<br><br>
+
+                                    <span style ="text-align:auto;color:red;font-family:verdana;font-size:12px"><b>What are the user interactions available?</b></span></b><br>
+                                    -<b>CLICK</b> on each state to drill down the details. All 4 charts change dynamically based on the selection.<br>
+                                    -Tooltip can be used to know the fatalities and prevalence by each state. <br>
+                                    -Can navigate to other screens using the buttons on the navigation bar.<br>
+                                    <p style="text-align:auto;font-family:verdana;font-size: 12px">
+                                     <span style ="text-align:auto;color:red;font-family:verdana;font-size:12px"><b>What does the story tell ?</b></span></b><br>
+                                    <b>Motor vehicle crashes are a leading cause of death in the U.S, with over 100 people dying every day. More than 2.5 million drivers and passengers were treated in emergency departments as the result of being injured in motor vehicle traffic crashes.<br>
+                                      "Life is beautiful and worth living. Consumption in modeartion can spare your and the life of others. Use this story to pass on the message, how drunk driving can cost the lives of your family and friends<br>
+                                      Now, its your RESPONSIBILITY my friend!!"</b>
+                                    </p>
+                      </div>
+                  </td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+
+      
+  </div>
+
+</body>
+<script src="crossfilter.js"></script>
+<script src="d3.v4.min.js"></script>
+<script src="page4.js"></script>
+</html>

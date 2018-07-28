@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data Visualization</title>
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+<body>
+    <h1 style="text-align:center;color:red;font-family:verdana;font-size:20px">SOBERING <span style="color: black;
+      font-family: verdana;font-size: 12x">effects of </span>DRUNK DRIVING</h1>
+  
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+              <!-- <ul class="nav navbar-nav navbar-left">
+                <li><a href="#">Left</a></li>
+            </ul> -->
+            <ul class="nav navbar-nav navbar-center">
+                <li><a href="index.html">ABOUT THE VISUALIZATION</a></li>
+                <li><a href="page1.html">1.OVERVIEW</a></li>
+                <li><a href="page2.html">2.FATALITIES</a></li>
+                <li><a href="page3.html">3.PREVALENCE</a></li>
+                <li><a href="page4.html">4.DETAILS</a></li>
+                <li><a href="page5.html">AUTHOR's SECTION</a></li>
+                <!-- <li><a href="page5.html">Scene 5</a></li> -->
+            </ul>
+            <!-- <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Right</a></li>
+            </ul> -->
+        </div>
+    </nav>
+
+  <!-- <br><br> <br><br>  -->
+  <div class="container">
+    <table>
+      <tr>
+        <td style="width:60%; float:left">
+            <div > 
+                 <h6 style="text-align:right;color:red;font-family:verdana;font-size: 15px"><b>Total Fatalities:</b> <span style="color: black;
+                  font-family: verdana;font-size: 15px">119,100</span> &#160 &#160 <b>Total Prevalance:</b> <span style="color: black;
+                  font-family: verdana;font-size: 15px">1.9%</span></h6>
+            <div>
+            <div id="details"></div>
+                          
+                
+        </td>
+        <td>
+            <div id="legend"></div>
+        </td>
+        <td style="width:40%; float:none; ">
+                    <p style="text-align:auto;font-family:verdana;font-size: 12px">
+                    <span style ="text-align:auto;color:red;font-family:verdana;font-size:12px"><b>What happened in 2012?</b></span></b><br> Let's explore what happened to the victims of 2012 who got killed in drunk driving based on the geo map of United States.<br>
+                    As a first step, lets get an verview of the chart that represents two kinds of causes for  deaths.<br>
+                    <b>1. Total Fatlities:119,100</b><br>
+                    Total fatalities is a chloropeth map with divering RED and BLUE colors that represent number of people killed in fatalities by State. The lowest represented by dark blue and the higest represented by RED. Legend shows the threshold of each color. Most populated states like Texas, California and Florida and most of eastern side of United States reported the highest number of fatalities.<br>
+                    <b>2. Total Prevalence:1.9% </b><br>
+                    Prevalence is the number of people reoprted driving after too much drinking. This is %, rate per 100 population represented in yellow bubbles. The biggger the bubble, the prevalence is greater. Legend shows the threshold for each circle.<br><br> 
+                    <span style ="text-align:auto;color:red;font-family:verdana;font-size:12px"><b>What are the user interactions available?</b></span></b><br>
+                    Tooltip can be used to know the fatalities and prevalence by each state. Can navigate to next screen using the buttons on the navigation bar.<br>
+                    <p style="text-align:auto;font-family:verdana;font-size: 12px">
+                     <span style ="text-align:auto;color:red;font-family:verdana;font-size:12px"><b>What does the story tell ?</b></span></b><br>
+                     States that are red/orange reported most fatalities. States that are blue i.e. which did not show too many fatalities on the contrary reported highest prevalence.<br>
+                     <b>That means, drunk drivers are everywhere costing the lives of many!!</b>
+                    </p>
+                  
+        </td>
+      </tr>
+    </table>
+     
+
+ </body>
+<script src="d3.v4.min.js"></script>
+<script src="main.js"></script>
+</html>

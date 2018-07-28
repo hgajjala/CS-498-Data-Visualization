@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data Visualization</title>
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+<body>
+        <h1 style="text-align:center;color:red;font-family:verdana;font-size: 30px">SOBERING <span style="color: black;
+            font-family: verdana;font-size: 20px">effects of </span>DRUNK DRIVING</h1>
+          <h2 style="text-align: center;color:black;font-family:verdana;font-size: 30px" >Be safe!</h2>
+          <nav class="navbar navbar-inverse" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                 <!-- <ul class="nav navbar-nav navbar-left">
+                    <li><a href="#">Left</a></li>
+                </ul> -->
+                <ul class="nav navbar-nav navbar-center">
+                    <li><a href="index.html">ABOUT THE VISUALIZATION</a></li>
+                    <li><a href="page1.html">1.OVERVIEW</a></li>
+                    <li><a href="page2.html">2.FATALITIES</a></li>
+                    <li><a href="page3.html">3.PREVALENCE</a></li>
+                    <li><a href="page4.html">4.DETAILS</a></li>
+                    <li><a href="page5.html">AUTHOR's SECTION</a></li>
+                </ul>
+                <!-- <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Right</a></li>
+                </ul> -->
+            </div>
+        </nav>
+
+  
+  <!-- <a href= "index.html" style="float:left" class="previous"> Previous </a>
+  <a href="page1.html" style="float:right" class="next">Next </a> -->
+
+  <div class="container">
+      <table>
+          <tbody>
+                <tr>
+                <td >
+                      <p style="text-align:justify;font-family:verdana;font-size: 12px">
+                         <span style ="text-align:auto;color:red;font-family:verdana;font-size:12px">
+                           <b>Does the narrative visualization correctly follow the hybrid structure as stated by the essay?</b></span><br> 
+                           This visualization follows a <u>Martini glass structure</u> and consists of four scenes.
+                           The first three scenes are designed to reveal information about drunk driving,total fatalities and prevalence progressively.
+                           However, the final one gives the user ability to interact heavily with the system to get into finer details by clicking on each State.  
+                           A common chart template was applied to all four scenes to distinguish the different data represented by Drunk Driving. 
+                           In addition, throughout the narrative, the viewer interacts using mouseover tooltips and filters. 
+                           Furthermore, annotations and highlights are available in the visualizations to aid the user.
+                       </p>
+                </td>
+                <td >
+                  <p style="text-align:justify;font-family:verdana;font-size: 12px">
+                   <span style ="text-align:auto;color:red;font-family:verdana;font-size:12px">
+                  <b>Does the narrative visualization effectively utilize scenes?</b></span>
+                    <p>This narrative partitions the story of drunk driving into four scenes. First, the user is introduced to an overview of the fatalities and prevalence using chlorepeth map and buble chart.
+                      Next, the user is presented with two scenes that explores top 10 states that are most dangerous and top 10 states that need to be watched out for.
+                      Finally, a higly detailed interactive chart presents with details by gender, age, prevalence and fatalities by each state.
+                    </p>
+                </td>
+                <td>
+                    <p style="text-align:justify;font-family:verdana;font-size: 12px">
+                      <span style = "color:red;font-family:verdana;font-size:12px">
+                        <b>Does the narrative visualization effectively utilize annotations</b>
+                      </span><br>
+                      This narrative visualization contains annotations in every scene using a common template scheme. 
+                      Every scene also has tooltips to aid and provide additional information to the user.
+                      Also, highlights are available to catch user's attention. 
+                    </p>
+                </td>
+                </tr>
+                <tr>
+                <td style="width:33%">
+                    <p style="text-align:justify;font-family:verdana;font-size: 12px">
+                      <span style ="text-align:auto;color:red;font-family:verdana;font-size:12px">
+                        <b>Does the narrative visualization effectively utilize parameters?
+                        </b>
+                      </span>
+                      <br>
+                      Every scene takes different data as parameters and displays the appropiate chart. Annimations are included based on the change in the state of the scene. On the last scene, the state change in one paramter(clicking on each  US State) causes all 4 bar charts to change its state.
+                      Can navigate to next screen using the buttons on the navigation bar.
+                      <br>
+                    </p>
+                  </td>           
+                      <td style="width:33%">
+                      <p style="text-align:justify;font-family:verdana;font-size: 12px">
+                      <span style ="text-align:auto;color:red;font-family:verdana;font-size:12px">
+                        <b>Does the narrative visualization effectively utilize triggers?</b></span><br>
+                        This visualization uses buttons, user clicks, and mouse-over tooltips as triggers to control the narrative.
+                        First three scenes has mouse over tooltips and annimations. Last scene has user clicks which triggers a state change in all other 4 charts displaying the details.
+                        </p>
+                      </td>   
+                     <td style="width:33%">
+                          <p style="text-align:justify;font-family:verdana;font-size: 12px">
+                          <span style ="color:red;font-family:verdana;font-size:12px">
+                            <b>Sources</b></span>                             
+                             <br>
+                               <a href="https://www.cdc.gov/motorvehiclesafety/impaired_driving/states-data-tables.html">Data source</a><br>
+                               <a href="https://github.com/hgajjala/CS-498-Data-Visualization">Source code</a>
+                            </p>
+                         </td>   
+                               
+            </tr>
+          </tbody>
+      </table>
+</div>
+  
+</body>
+<script src="d3.v4.min.js"></script>
+<script src="main.js"></script>
+</html>
